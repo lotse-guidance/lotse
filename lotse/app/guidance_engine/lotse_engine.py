@@ -4,10 +4,10 @@ from typing import List
 
 from rickled import ObjectRickler, Rickle
 
-from guidance_strategies.action import ConditionalGuidanceAction
-from guidance_strategies.strategy import Strategy
-from guidance_strategies.suggestion import SuggestionModel
-from guidance_strategies.meta_strategy import MetaStrategy
+from lotse.action import ConditionalGuidanceAction
+from lotse.strategy import Strategy
+from lotse.suggestion import SuggestionModel
+from lotse.meta_strategy import MetaStrategy
 
 
 class ContextVector:

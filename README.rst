@@ -22,7 +22,7 @@ FastAPI-Integration
   1. Add Lotse to your requirements.txt: `lotse==1.0.0`
   2. Import Lotse and mount it:
 
-        from guidance_strategies.app.main import app as guidance_engine
+        from lotse.app.main import app as guidance_engine
 
         app.mount('/your-path', guidance_engine)
 
@@ -396,7 +396,7 @@ Custom State Vector Initialization
 
 In some cases the `initialize()`-method defined in the analysis state yaml might not be sufficient to setup the state vector, for example when database access is needed and credentials need to be passed in. In such cases, developers can fall back to implementing some python code: ::
 
-    from guidance_strategies.app.main import app as guidance_engine
+    from lotse.app.main import app as guidance_engine
     data = [] # get data from somewhere, e.g. connect to database etc.
     guidance_engine.update_state('data', data)
 
